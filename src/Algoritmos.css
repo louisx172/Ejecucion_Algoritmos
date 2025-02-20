@@ -1,0 +1,395 @@
+/* Algoritmos.css */
+.algoritmos-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .layout-wrapper {
+    display: flex;
+    flex: 1;
+  }
+  
+  .sidebar {
+    background-color: #E8C547;
+    width: 200px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .logo {
+    margin-bottom: 2rem;
+  }
+  
+  .logo-image {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .algorithm-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .algorithm-list li {
+    padding: 0.5rem 0;
+    cursor: pointer;
+  }
+  
+  .algorithm-list li.active {
+    font-weight: bold;
+  }
+  
+  .main-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .top-nav {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+    padding: 1rem;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li a {
+    color: #333;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+  
+  .nav-links li a.active {
+    background-color: #4a4a4a;
+    color: white;
+  }
+  
+  .content {
+    display: flex;
+    flex: 1;
+    padding: 1rem;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 1rem;
+  }
+  
+  .code-panel {
+    width: 300px;
+    background-color: #f8f9fa;
+    padding: 1rem;
+  }
+  
+  .language-tabs {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  
+  .tab {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .tab.active {
+    background-color: #4285f4;
+    color: white;
+  }
+  
+  .code-block {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 4px;
+    overflow-x: auto;
+  }
+  
+  code {
+    font-family: 'Courier New', Courier, monospace;
+    white-space: pre-wrap;
+  }
+  
+  /* Footer styles */
+  .footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 1rem;
+  }
+  
+  .footer-column h4 {
+    color: #ffd700;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-column a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-column a:hover {
+    color: #ffd700;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .social-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #555;
+  }
+
+
+  .code-panel {
+    width: 300px;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    flex-shrink: 0; /* Evita que el panel se encoja */
+  }
+  
+  .language-tabs {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  
+  .tab {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .tab.active {
+    background-color: #4285f4;
+    color: white;
+  }
+  
+  .code-block {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    overflow-x: auto; /* Habilita el scroll horizontal */
+    
+    /* Estilos para la barra de desplazamiento */
+    scrollbar-width: thin; /* Para Firefox */
+    scrollbar-color: #666 #2d2d2d; /* Para Firefox */
+  }
+  
+  /* Estilos para la barra de desplazamiento en WebKit */
+  .code-block::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .code-block::-webkit-scrollbar-track {
+    background: #2d2d2d;
+  }
+  
+  .code-block::-webkit-scrollbar-thumb {
+    background-color: #666;
+    border-radius: 4px;
+  }
+  
+  code {
+    white-space: pre; /* Cambiado de pre-wrap a pre para prevenir el wrap automático */
+    display: inline-block;
+    min-width: 100%;
+    width: fit-content;
+    font-size: 14px; /* Tamaño de fuente fijo para consistencia */
+    line-height: 1.5;
+    
+    /* Ancho basado en caracteres */
+    font-family: monospace;
+    width: 45ch; /* Aproximadamente 45 caracteres de ancho */
+  }
+  .code-panel {
+    width: 300px;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Asegura que el panel ocupe toda la altura disponible */
+  }
+  
+  .language-tabs {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  
+  .tab {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .tab.active {
+    background-color: #4285f4;
+    color: white;
+  }
+  
+  .code-block {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: auto; /* Habilita tanto el scroll vertical como horizontal */
+    flex-grow: 1; /* Permite que el bloque de código crezca para llenar el espacio disponible */
+    
+    /* Estilos para las barras de desplazamiento */
+    scrollbar-width: thin; /* Para Firefox */
+    scrollbar-color: #666 #2d2d2d; /* Para Firefox */
+    
+    /* Altura máxima para forzar el scroll vertical */
+    max-height: 400px; /* Ajusta este valor según tus necesidades */
+  }
+  
+  /* Estilos para las barras de desplazamiento en WebKit */
+  .code-block::-webkit-scrollbar {
+    width: 8px; /* Ancho de la barra vertical */
+    height: 8px; /* Altura de la barra horizontal */
+  }
+  
+  .code-block::-webkit-scrollbar-track {
+    background: #2d2d2d;
+  }
+  
+  .code-block::-webkit-scrollbar-thumb {
+    background-color: #666;
+    border-radius: 4px;
+  }
+  
+  .code-block::-webkit-scrollbar-corner {
+    background: #2d2d2d; /* Color de la esquina donde se encuentran las barras */
+  }
+  
+  code {
+    white-space: pre;
+    display: inline-block;
+    min-width: 100%;
+    width: fit-content;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: monospace;
+    width: 45ch;
+  }
+
+  .algorithm-controls {
+    margin: 20px 0;
+    padding: 15px;
+    background: #f5f5f5;
+    border-radius: 8px;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .algorithm-input {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px;
+    margin-right: 10px;
+  }
+  
+  .run-button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .run-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .run-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .output-section {
+    margin: 20px 0;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+  }
+  
+  .output-content {
+    background: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #eee;
+    overflow-x: auto;
+  }
+  
+  .visualization-section {
+    margin: 20px 0;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  @media (max-width: 768px) {
+    .algorithm-input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    
+    .visualization-section iframe {
+      height: 400px;
+    }
+  }
